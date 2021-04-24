@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="box" id="heading">
+
+        <h1><%= dayType %></h1>
+        
+    
+    </div>
+    
+    <div class="box">
+        <% for( let index = 0; index < newItem.length; index++ ) { %>
+
+            <div class="item">
+                <input type="checkbox" name="" id="">
+                <p><%= newItem[index]  %> </p>
+            </div>
+            
+        
+        <% } %>
+
+
+        <form class="item" action="" method="post">
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <button type="submit">+</button>
+        </form>
+    
+    </div>
+
+</body>
+<footer>
+    ©Copyright 2021 Shaikh Afzaal Ramaiah University
+</footer>
+</html>
